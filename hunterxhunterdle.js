@@ -58,5 +58,5 @@ function createGuessCard(guessed_hunter, correct_hunter, card_num, row) {
     else {table_card_body.setAttribute("class","card-body card-body-success")}
   }
   table_card_text.setAttribute("class","card-text")
-  table_card_text.innerHTML = guessed_hunter
+  table_card_text.innerHTML = guessed_hunter.toString().replace(",","\n")
 }

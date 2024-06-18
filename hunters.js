@@ -12,5 +12,5 @@ var hunter_list = [
     ["Beans","Male",["Hunter Association"],["Unknown"],"Bald","Hunter Exam"],
     ["Isaac Netero","Male",["Hunter Association,Shingen-ryu Dojo"],["Enhancement"],"White","Hunter Exam"],
     ["Lippo","Male",["Hunter Association,Trick Tower"],["Unknown"],"Violet","Hunter Exam"],
-    ["Pokkle","Male",["None"],["Unknown"],"Brown","Hunter Exam"],
+    ["Pokkle","Male",["None"],["Unknown"],"Brown","Hunter Exam"]
 ]
