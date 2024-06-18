@@ -1,0 +1,35 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+.guess-row-header {
+  text-align: center;
+}
+
+.guess-row-body {
+  text-align: center;
+  .card {
+    border-color: black;
+  }
+  .card-body {
+    color: white;
+  }
+  .card-body-fail {
+    background-color:#dc3545;
+  }  
+  .card-body-success {
+    background-color:#198754;
+  }
+  .card-body-name {
+    background-color:#0d6efd;
+  }
+}
