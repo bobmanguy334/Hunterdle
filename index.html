@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="gamedle-css.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="card text-center">
+        <div class="card-header">
+          <div class="card-text">
+            <h1>HunterxHunterdle</h1>
+          </div>
+          <div class="card-text">
+            <h3>Dataset only goes up to the end of the Hunter Exam.</h3>
+          </div>
+        </div>
+        <div class="card-body mt-3">
+          <input class="form-control" list="guessDatalistOptions" id="guessDatalist" placeholder="Your Guess Here">
+          <datalist id="guessDatalistOptions">
+          </datalist>
+          <button id="guessButton" class="btn btn-primary">Guess!</button>
+        </div>
+      </div> 
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr class="guess-row-header">
+              <th scope="col">Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Affiliation</th>
+              <th scope="col">Nen Type</th>
+              <th scope="col">Hair Color</th>
+              <th scope="col">First Appearance</th>
+            </tr>
+          </thead>
+          <tbody id="guessTable">
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- /container -->
+
+  <script src="hunterxhunterdle.js" type="module"></script>
+  <script src="hunters.js"></script>
+  </body>
+</html>
