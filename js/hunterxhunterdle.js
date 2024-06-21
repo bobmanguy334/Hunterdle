@@ -2,20 +2,22 @@ import "./hunters.js";
 
 hunter_list.forEach(addToGuessList)
 
-var answer = ["Pokkle","Male",["None"],["Unknown"],"Brown","Hunter Exam"]
+var last_seven = []
 
-var guess_button = document.getElementById("guessButton")
-
-guess_button.addEventListener("click", function guessEvent() {
-    populateGuessCards(document.getElementById("guessDatalist").value)
-  }
-)
+var answer = ["Isaac Netero","Male",["Hunter Association","Shingen-ryu Dojo"],["Enhancement"],"White","Hunter Exam"]
 
 function addToGuessList(item) {
-  var list = document.getElementById("guessDatalistOptions")
-  var option = document.createElement("option")
-  option.value=item[0]
-  list.appendChild(option)
+  let list_item = document.getElementById("guessDropdownOptions").appendChild(document.createElement("li")).appendChild(document.createElement("span"))
+  list_item.setAttribute("class","dropdown-item")
+  let list_img = list_item.appendChild(document.createElement("img"))
+  let img_string = "assets/img/hunters/" + item[0].replace(" ","_") + ".png"
+  list_img.setAttribute("src",img_string)
+  list_img.setAttribute("class","guess-img")
+  list_item.append(item[0])
+  list_item.addEventListener("click", function guessEvent() {
+    populateGuessCards(item[0])
+  }
+)
 }
 
 function populateGuessCards(guess) {
@@ -42,21 +44,44 @@ function createGuessCard(guessed_hunter, correct_hunter, card_num, row) {
   table_column.setAttribute("class","col")
   table_card.setAttribute("class","card")
   if (card_num == 0) {table_card_body.setAttribute("class","card-body card-body-name")}
-  else if (card_num == 2 || card_num == 3) {
+  else if (card_num == 2 || card_num == 3) { //do something on affiliation and nen type
     table_card_body.setAttribute("class","card-body card-body-fail")
+    let correct_count = 0
     for (let i = 0; i < guessed_hunter.length; i++) {
       for (let j = 0; j < correct_hunter.length; j++) {
         if (guessed_hunter[i] == correct_hunter[j]) {
-          table_card_body.setAttribute("class","card-body card-body-success")
+          correct_count++
           break;
         }
       }
+    }
+    if (correct_count != correct_hunter. length) {
+      if(correct_count != 0) {
+        table_card_body.setAttribute("class","card-body card-body-partial")
+      }
+      else {
+        table_card_body.setAttribute("class","card-body card-body-fail")
+      }
+    }
+    else {
+      table_card_body.setAttribute("class","card-body card-body-success")
     }
   }
   else {
     if(correct_hunter != guessed_hunter) {table_card_body.setAttribute("class","card-body card-body-fail")}
     else {table_card_body.setAttribute("class","card-body card-body-success")}
   }
-  table_card_text.setAttribute("class","card-text")
-  table_card_text.innerHTML = guessed_hunter.toString().replace(",","\n")
+  table_card_text.setAttribute("class","card-text white-space: pre-line")
+  table_card_text.innerHTML = guessed_hunter.toString().replace(",",'\n')
+}
+
+function getAnswer() { // bits and pieces right now
+  let time = new Date().getUTCHours()
+  if (Date.get)
+
+  if (last_seven.length == 7) {
+    last_seven.pop()
+    last_seven.unshift(answer)
+  }
+  else {last_seven.unshift(answer)}
 }

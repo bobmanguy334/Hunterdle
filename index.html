@@ -28,10 +28,11 @@
           </div>
         </div>
         <div class="card-body mt-3">
-          <input class="form-control" list="guessDatalistOptions" id="guessDatalist" placeholder="Your Guess Here">
-          <datalist id="guessDatalistOptions">
-          </datalist>
-          <button id="guessButton" class="btn btn-primary">Guess!</button>
+          <div class="dropdown">
+            <input class="dropdown-toggle" data-bs-toggle="dropdown" type="search" placeholder="Guess here!" autocomplete="on">
+            <ul id="guessDropdownOptions" class="dropdown-menu" role="menu">
+            </ul>
+          </div>
         </div>
       </div> 
 
@@ -39,21 +40,40 @@
         <table class="table">
           <thead>
             <tr class="guess-row-header">
-              <th scope="col">Name</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Affiliation</th>
-              <th scope="col">Nen Type</th>
-              <th scope="col">Hair Color</th>
-              <th scope="col">First Appearance</th>
+              <th class="guess-row-header-column" scope="col">Name</th>
+              <th class="guess-row-header-column" scope="col">Gender</th>
+              <th class="guess-row-header-column" scope="col">Affiliation</th>
+              <th class="guess-row-header-column" scope="col">Nen Type</th>
+              <th class="guess-row-header-column" scope="col">Hair Color</th>
+              <th class="guess-row-header-column" scope="col">First Appearance</th>
             </tr>
           </thead>
           <tbody id="guessTable">
           </tbody>
         </table>
       </div>
+      <div class="card legend-card">
+        <div class="card-header">
+          <div class="card-text">Legend</div>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <tbody>
+                <td><span class="badge text-bg-primary">Name</span></td>
+                <td><span class="badge text-bg-success">Correct</span></td>
+                <td><span class="badge text-bg-warning">Partial</span></td>
+                <td><span class="badge text-bg-danger">Wrong</span></td>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div> <!-- /container -->
 
-  <script src="hunterxhunterdle.js" type="module"></script>
-  <script src="hunters.js"></script>
+  <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/hunterxhunterdle.js"></script>
+  <script type="text/javascript" src="js/hunters.js"></script>
   </body>
 </html>

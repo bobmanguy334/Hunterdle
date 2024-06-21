@@ -8,9 +8,9 @@ var hunter_list = [
     ["Hisoka Morow","Male",["Hunter Association"],["Transmutation"],"Red","Hunter Exam"],
     ["Menchi","Female",["Hunter Association"],["Unknown"],"Turquoise","Hunter Exam"],
     ["Buhara","Male",["Hunter Association"],["Unknown"],"Black","Hunter Exam"],
-    ["Hanzo","Male",["Cloud-Hidden Style, Hunter Association"],["None"],"Bald","Hunter Exam"],
+    ["Hanzo","Male",["Cloud-Hidden Style","Hunter Association"],["None"],"Bald","Hunter Exam"],
     ["Beans","Male",["Hunter Association"],["Unknown"],"Bald","Hunter Exam"],
-    ["Isaac Netero","Male",["Hunter Association,Shingen-ryu Dojo"],["Enhancement"],"White","Hunter Exam"],
-    ["Lippo","Male",["Hunter Association,Trick Tower"],["Unknown"],"Violet","Hunter Exam"],
+    ["Isaac Netero","Male",["Hunter Association","Shingen-ryu Dojo"],["Enhancement"],"White","Hunter Exam"],
+    ["Lippo","Male",["Hunter Association","Trick Tower"],["Unknown"],"Violet","Hunter Exam"],
     ["Pokkle","Male",["None"],["Unknown"],"Brown","Hunter Exam"]
 ]

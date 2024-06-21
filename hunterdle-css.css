@@ -1,7 +1,12 @@
 /* Space out content a bit */
 body {
+  background-image: url("./assets/backgrounds/hunter-x-hunter-background.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+td {
+  border-style: none;
 }
 
 /* Customize container */
@@ -10,9 +15,18 @@ body {
     max-width: 900px;
   }
 }
+.table {
+  --bs-table-bg: none;
+}
 
 .guess-row-header {
+  background-color: white;
   text-align: center;
+}
+
+.guess-img {
+  max-width: 4em;
+  padding-right: 1em;
 }
 
 .guess-row-body {
@@ -20,8 +34,13 @@ body {
   .card {
     border-color: black;
   }
+  .card-text {
+    white-space: pre-line
+  }
   .card-body {
+    font-size: 1vw;
     color: white;
+    font-weight: bold;
   }
   .card-body-fail {
     background-color:#dc3545;
@@ -29,7 +48,18 @@ body {
   .card-body-success {
     background-color:#198754;
   }
+  .card-body-partial {
+    background-color:#ffc107;
+    color: black;
+  }
   .card-body-name {
     background-color:#0d6efd;
   }
+}
+
+.legend-card {
+  margin:auto;
+  max-width: 50%;
+  text-align: center;
+  font-weight: bold;
 }
