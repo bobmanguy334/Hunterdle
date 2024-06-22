@@ -29,7 +29,10 @@ function populateGuessCards(guess) {
   {
     if(hunter_list[i][0] == guess)
       {
-        const table_row = document.getElementById("guessTable").appendChild(document.createElement("tr"))
+        var table, table_row
+        table = document.getElementById("guessTable")
+        table_row = document.createElement("tr")
+        table.insertBefore(table_row, table.firstChild)
         table_row.setAttribute("class","guess-row-body")
         for (let j = 0; j < hunter_list[i].length; j++)
           {
