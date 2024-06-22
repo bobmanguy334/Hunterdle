@@ -1,5 +1,5 @@
 var hunter_list = [
-    ["Gon Freecss","Male",["Hunter Association"],["Enhancement"],"Black","Zoldyck Family"],
+    ["Gon Freecss","Male",["Hunter Association"],["Enhancement"],"Black","Hunter Exam"],
     ["Killua Zoldyck", "Male", ["Hunter Association"], ["Transmutation"],"White","Hunter Exam"],
     ["Kurapika","Male",["Hunter Association", "Nostrade Family"],["Conjuration", "Specialization"],"Blonde","Hunter Exam"],
     ["Leorio Paradinight","Male",["Hunter Association"],["Emission"],"Black","Hunter Exam"],

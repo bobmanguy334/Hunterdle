@@ -87,13 +87,13 @@ function createGuessCard(guessed_hunter, correct_hunter, card_num, row) {
       if(guess_arc_num > answer_arc_num) {
         table_card_body.setAttribute("class","card-body card-body-fail")
         img.setAttribute("class","card-body-down-arrow")
-        img.setAttribute("src","../assets/icons/arrow-down-square.svg")
+        img.setAttribute("src","./assets/icons/arrow-down-square.svg")
         table_card_text.append(img)
       }
       else if(guess_arc_num < answer_arc_num) {
         table_card_body.setAttribute("class","card-body card-body-fail")
         img.setAttribute("class","card-body-up-arrow")
-        img.setAttribute("src","../assets/icons/arrow-up-square.svg")
+        img.setAttribute("src","./assets/icons/arrow-up-square.svg")
         table_card_text.append(img)
       }
       else {table_card_body.setAttribute("class","card-body card-body-success")}
