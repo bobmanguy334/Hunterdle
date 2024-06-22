@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  background-image: url("./assets/backgrounds/hunter-x-hunter-background.jpg");
+  background-image: url("../assets/backgrounds/hunter-x-hunter-background.jpg");
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -52,8 +52,29 @@ td {
     background-color:#ffc107;
     color: black;
   }
+  .card-body-up-arrow {
+    background-color:#dc3545;
+    width: 16;
+    height: 16;
+  }
+  .card-body-down-arrow {
+    background-color:#dc3545;
+    width: 16;
+    height: 16;
+  }
   .card-body-name {
     background-color:#0d6efd;
+  }
+}
+
+.last-hunter-card {
+  margin:auto;
+  max-width: 50%;
+  background-color: none;
+  font-weight: bold;
+  text-align: center;
+  .last-hunter-text {
+    color: blue;
   }
 }
 

@@ -1,5 +1,5 @@
 var hunter_list = [
-    ["Gon Freecss","Male",["Hunter Association"],["Enhancement"],"Black","Hunter Exam"],
+    ["Gon Freecss","Male",["Hunter Association"],["Enhancement"],"Black","Zoldyck Family"],
     ["Killua Zoldyck", "Male", ["Hunter Association"], ["Transmutation"],"White","Hunter Exam"],
     ["Kurapika","Male",["Hunter Association", "Nostrade Family"],["Conjuration", "Specialization"],"Blonde","Hunter Exam"],
     ["Leorio Paradinight","Male",["Hunter Association"],["Emission"],"Black","Hunter Exam"],
@@ -14,3 +14,5 @@ var hunter_list = [
     ["Lippo","Male",["Hunter Association","Trick Tower"],["Unknown"],"Violet","Hunter Exam"],
     ["Pokkle","Male",["None"],["Unknown"],"Brown","Hunter Exam"]
 ]
+
+var arc_timeline = ["Hunter Exam", "Zoldyck Family", "Heavens Arena", "Yorknew City", "Greed Island", "Chimera Ant", "13th Hunter Chairman Election", "Dark Continent Expedition", "Succession Contest"]

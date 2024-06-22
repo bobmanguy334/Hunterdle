@@ -12,7 +12,8 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="hunterdle-css.css" rel="stylesheet">
+    <link href="css/hunterdle.css" rel="stylesheet">
+    <link href="css/chosen.css" rel="stylesheet">
   </head>
 
   <body>
@@ -29,7 +30,7 @@
         </div>
         <div class="card-body mt-3">
           <div class="dropdown">
-            <input class="dropdown-toggle" data-bs-toggle="dropdown" type="search" placeholder="Guess here!" autocomplete="on">
+            <input id="guessDropdownInput" class="dropdown-toggle" data-bs-toggle="dropdown" type="search" placeholder="Guess here!">
             <ul id="guessDropdownOptions" class="dropdown-menu" role="menu">
             </ul>
           </div>
@@ -52,6 +53,11 @@
           </tbody>
         </table>
       </div>
+      <div class="card last-hunter-card">
+        <div class="card-header">
+          <div class="card-text">Yesterday's answer was: <span id="lastHunterText" class="last-hunter-text">Gon Freecss</span></div>
+        </div>
+      </div>
       <div class="card legend-card">
         <div class="card-header">
           <div class="card-text">Legend</div>
@@ -73,6 +79,7 @@
 
   <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
   <script type="module" src="js/hunterxhunterdle.js"></script>
   <script type="text/javascript" src="js/hunters.js"></script>
   </body>
